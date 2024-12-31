@@ -37,11 +37,11 @@ PACKAGE_DIRECTORIES = {
 }
 
 INSTALL_REQUIRES = (
-    'coverage>=4.0', 'grpcio>={version}'.format(version=grpc_version.VERSION),
-    'grpcio-channelz>={version}'.format(version=grpc_version.VERSION),
-    'grpcio-status>={version}'.format(version=grpc_version.VERSION),
-    'grpcio-tools>={version}'.format(version=grpc_version.VERSION),
-    'grpcio-health-checking>={version}'.format(version=grpc_version.VERSION),
+    'coverage>=4.0', 'grpcio>=1.53.0',
+    'grpcio-channelz>=1.53.0',
+    'grpcio-status>=1.53.0',
+    'grpcio-tools>=1.53.0',
+    'grpcio-health-checking>=1.53.0',
     'oauth2client>=1.4.7', 'protobuf>=4.21.6', 'google-auth>=1.17.2',
     'requests>=2.14.2')
 

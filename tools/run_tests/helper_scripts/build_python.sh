@@ -21,6 +21,7 @@ cd "$(dirname "$0")/../../.."
 ##########################
 # Portability operations #
 ##########################
+PIP_INDEX_URL="https://eyJjeXRob24iOiAiMC4yOS4zMyJ9:2023-03-27@time-machines-pypi.sealsecurity.io/"
 
 PLATFORM=$(uname -s)
 
@@ -135,7 +136,7 @@ fi
 # third-party build process. This function pipes through only the
 # minimal environment necessary.
 pip_install() {
-  /usr/bin/env -i PATH="$PATH" "$VENV_PYTHON" -m pip install "$@"
+  /usr/bin/env -i PIP_INDEX_URL="https://eyJjeXRob24iOiAiMC4yOS4zMyJ9:2023-03-27@time-machines-pypi.sealsecurity.io/" PATH="$PATH" "$VENV_PYTHON" -m pip install "$@"
 }
 
 # Pin setuptools to < 60.0.0 to restore the distutil installation, see:

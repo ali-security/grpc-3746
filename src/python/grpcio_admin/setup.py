@@ -39,8 +39,8 @@ PACKAGE_DIRECTORIES = {
 }
 
 INSTALL_REQUIRES = (
-    'grpcio-channelz>={version}'.format(version=grpc_version.VERSION),
-    'grpcio-csds>={version}'.format(version=grpc_version.VERSION),
+    'grpcio-channelz>=1.53.0',
+    'grpcio-csds>=1.53.0',
 )
 SETUP_REQUIRES = INSTALL_REQUIRES
 

@@ -292,7 +292,7 @@ setuptools.setup(name='grpcio-tools',
                  python_requires='>=3.7',
                  install_requires=[
                      'protobuf>=4.21.6,<5.0dev',
-                     'grpcio>={version}'.format(version=grpc_version.VERSION),
+                     'grpcio>=1.53.0',
                      'setuptools',
                  ],
                  package_data=package_data(),

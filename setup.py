@@ -484,7 +484,7 @@ PACKAGE_DIRECTORIES = {
 INSTALL_REQUIRES = ()
 
 EXTRAS_REQUIRES = {
-    'protobuf': 'grpcio-tools>={version}'.format(version=grpc_version.VERSION),
+    'protobuf': 'grpcio-tools>=1.53.0',
 }
 
 SETUP_REQUIRES = INSTALL_REQUIRES + (
